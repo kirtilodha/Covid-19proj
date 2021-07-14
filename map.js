@@ -1,6 +1,6 @@
 //const fetch = require("node-fetch");
 function updatem(){
-  fetch("http://api.coronatracker.com/v3/analytics/dailyNewStats?limit=200").then(response=>response.json()).then(data=>{
+  fetch("http://api.coronatracker.com/v5/analytics/dailyNewStats?limit=200").then(response=>response.json()).then(data=>{
        console.log(data)
       data.forEach(element=>{
         lat=element.lat;
